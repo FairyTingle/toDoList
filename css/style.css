@@ -1,0 +1,164 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    background-color: #f5f5f5;
+    font-family: "微软雅黑";
+
+}
+h3{
+    color: #dddddd;
+    font-weight: bold;
+    text-align: center;
+    font-family: "微软雅黑";
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+
+}
+.container{
+    width:1020px;
+    margin:auto;
+    position: relative;
+    top:25px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    background-color: #00ae51;
+    background-color: #00cf60;
+    border-radius: 20px;
+    box-shadow: 16px 16px 12px 9px #272727;
+    border:5px dashed #d7452f;
+}
+/*便签设定*/
+.task-list {
+    width: 346px;
+    float: left;
+    margin: 0 0px 0px 15px;
+    background-color: #d7452f;
+    /*background-color: #f74e31;*/
+    min-height: 320px;
+    max-height: 320px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+.del-scroll{
+    width: 333px;
+    overflow: hidden;
+    float:left;
+    border-radius: 10px;
+    box-shadow: 25px 17px 36px 0px #541c13;
+}
+/*添加项目*/
+.add-list {
+    width: 1000px;
+    position: relative;
+    margin:0 auto;
+    top:20px;
+    background-color: #d7452f;
+    min-height: 100px;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    clear: both;
+    box-shadow: 4px 3px 6px 4px #541c13;
+
+
+}
+/*文字框*/
+.add-list input{
+    width: 480px;
+    height:30px;
+    margin: 5px 10px;
+    border-radius: 12px;
+    border:0px;
+    outline: none;
+    float: left;
+    box-shadow: 3px 4px 6px 1px #541c13 inset;
+}
+/*文字输入区域*/
+.add-list textarea {
+    width: 480px;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px 10px;
+    border-radius: 10px;
+    border:0px;
+    outline: none;
+    float: left;
+    box-shadow: 3px 4px 6px 1px #541c13 inset;
+}
+/*删除区域*/
+#delete-div {
+    background-color: #fff;
+    height: 30px;
+    width:1010px;
+    line-height: 20px;
+    text-align: center;
+    border:5px dashed #333333;
+    position: absolute;
+    bottom:0px;
+    font-weight: 900;
+}
+.hidden {
+    display: none;
+}
+/*便签内计划内容*/
+.todo-task {
+    min-height:30px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #f9c802;
+    width: 286px;
+    margin: 13px 13px 8px 0px;
+    padding: 7px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 3px 4px 6px 4px #541c13;
+    word-break:break-all;/*解决div下英文数字溢出问题*/
+}
+.todo-task > .task-header {
+    font-weight: bold;
+    color: #4e4e4e;
+}
+.todo-task > .task-date {
+    font-size: small;
+    color: #4e4e4e;
+}
+.todo-task > .task-description {
+    font-size: smaller;
+    color: #4e4e4e;
+}
+/*删除的x*/
+.todo-task .remove {
+    color: #080000;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    font-weight:bolder;
+    text-shadow: 1px 1px #c0c0c0;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+/*按钮样式*/
+.add-list input[type="button"] {
+    width: 240px;
+    margin: 5px;
+    float: left;
+    background-color: #f9c802;
+    box-shadow: 3px 2px 4px 2px #541c13;
+    color: #d7452f;
+    font-weight: bold;
+    font-family: "微软雅黑";
+}
+
+

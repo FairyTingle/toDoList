@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>记事本</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <!--<link rel="stylesheet" href="bootstrap.css">-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="del-scroll">
+            <div class="task-list" id="short-term">
+                <h3>Short Term Planning</h3>
+            </div>
+        </div>
+        <div class="del-scroll">
+            <div class="task-list" id="long-term">
+                <h3>Long Term Planning</h3>
+            </div>
+        </div>
+        <div class="del-scroll">
+            <div class="task-list" id="temporary-term">
+                <h3> Inspiration</h3>
+            </div>
+        </div>
+            <div class="add-list">
+                <h3>Add Plans Here!</h3>
+                <form id="todo-form">
+                    <input type="text" class="addTitle" placeholder=" 标题" />
+                    <input type="text" placeholder=" 日期 (月/日/年)" id="datepicker" class="addDate"/>
+                    <input type="button" class="btndel" value="清空全部" />
+                    <textarea placeholder=" 内容" class="addDescriptions"></textarea>
+                    <input type="button" value="添加计划" id="addItem"/>
+                </form>
+            </div>
+
+        <div id="delete-div" class="hidden">拖到这删除</div>
+    </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/my.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var my = new MyTodoList();
+    });
+</script>
+</html>
